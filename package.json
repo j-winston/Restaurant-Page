@@ -1,0 +1,25 @@
+{
+  "name": "js-restaurant-page",
+  "version": "1.0.0",
+  "description": "A simple js generated restaurant page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j-winston/Restaurant-Page.git"
+  },
+  "author": "James Winston",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j-winston/Restaurant-Page/issues"
+  },
+  "homepage": "https://github.com/j-winston/Restaurant-Page#readme",
+  "devDependencies": {
+    "webpack": "^5.76.2",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.1"
+  }
+}
