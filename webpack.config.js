@@ -7,10 +7,36 @@ module.exports = {
 
   output: {
     filename: "main.js",
-    path: path.resolve(__dirname, "./dist"),
+    path: path.resolve(__dirname, "dist"),
   },
 
   devServer: {
-    static: "./dist",
+    static: {
+      directory: path.resolve(__dirname, "./dist"),
+      publicPath: "/",
+    },
+  },
+
+  module: {
+    rules: [
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
+        options: {
+          sources: {
+            list: [
+              "...",
+              {
+                tag: "img",
+              },
+            ],
+          },
+        },
+      },
+      {
+        test: /\.(png|jpg)$/i,
+        type: "asset/resource",
+      },
+    ],
   },
 };
