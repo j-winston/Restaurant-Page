@@ -1,5 +1,4 @@
 const path = require("path");
-const PromptSync = require("prompt-sync");
 
 module.exports = {
   mode: "development",
@@ -12,8 +11,7 @@ module.exports = {
 
   devServer: {
     static: {
-      directory: path.resolve(__dirname, "./dist"),
-      publicPath: "/",
+      directory: "./dist",
     },
   },
 
