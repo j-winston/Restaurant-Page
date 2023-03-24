@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(234, 225, 206);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3,
+p,
+div {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.site-container {
+  background-color: #f8ac1d;
+  height: 70%;
+  width: 80%;
+
+  display: grid;
+
+  grid-template-areas:
+    "nav"
+    "hero"
+    "hero";
+
+  grid-template-rows: 1fr 3fr 2fr;
+
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.hero-section {
+  grid-area: hero;
+  background-color: pink;
+
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+}
+.hero-container {
+}
+.hero-title {
+  font-size: 2rem;
+}
+
+.nav-section {
+  grid-area: nav;
+  background-color: white;
+}
