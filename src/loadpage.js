@@ -6,10 +6,11 @@ import HeroPng from "../src/big-mama-background.png";
 const siteContainer = document.querySelector(".site-container");
 
 const createNavElements = () => {
-  const navBar = document.createElement("nav");
-  navBar.className = "nav-container";
-  navBar.textContent = "This is the nav bar";
-  return navBar;
+  const navContainer = document.createElement("nav");
+  navContainer.className = "nav-container";
+  navContainer.textContent = "This is the nav container";
+
+  return navContainer;
 };
 
 const createHeroElements = () => {

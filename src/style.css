@@ -30,7 +30,6 @@ img {
 }
 
 .site-container {
-  background-color: #f8ac1d;
   height: 70%;
   width: 80%;
 
@@ -42,33 +41,36 @@ img {
 
   grid-template-rows: auto 1fr;
 
-  border-radius: 10px;
+  padding: 30px;
 }
 
 .hero-container::before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: .1;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
 
-    background-image: url('../src/big-mama-background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("../src/big-mama-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-container {
   grid-area: hero;
 
   position: relative;
+
   height: 100%;
   width: 100%;
   padding: 0 20px;
-}
 
+  background-color: #f8ac1d;
+  border-radius: 15px;
+}
 
 .hero-title-container {
   height: 50%;
