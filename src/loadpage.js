@@ -2,7 +2,7 @@
 // page node elements
 import "../src/style.css";
 
-import HeroImgFile from "../src/big-mama-background.png";
+import HeroPng from "../src/big-mama-background.png";
 const siteContainer = document.querySelector(".site-container");
 
 const createNavElements = () => {
@@ -13,6 +13,10 @@ const createNavElements = () => {
 };
 
 const createHeroElements = () => {
+  const heroImage = new Image();
+  heroImage.src = HeroPng;
+  heroImage.className = "hero-img";
+
   const heroContainer = document.createElement("main");
   heroContainer.className = "hero-container";
 
@@ -20,21 +24,23 @@ const createHeroElements = () => {
   heroTitle.className = "hero-title";
   heroTitle.textContent = "BIG MAMA T's Cafe";
 
-  const heroImage = new Image();
-  heroImage.src = HeroImgFile;
-
   const heroCopyHeading = document.createElement("h2");
   heroCopyHeading.className = "hero-copy-heading";
   heroCopyHeading.textContent = "Soulful.Original.Timeless.";
 
-  const heroCopy = document.createElement("p");
-  heroCopy.className = "hero-copy";
-  heroCopy.textContent =
+  const heroTitleContainer = document.createElement("div");
+  heroTitleContainer.className = "hero-title-container";
+
+  heroTitleContainer.appendChild(heroTitle);
+  heroTitleContainer.appendChild(heroCopyHeading);
+
+  const heroCopyContainer = document.createElement("div");
+  heroCopyContainer.className = "hero-copy-container";
+  heroCopyContainer.textContent =
     "Folks all over the south line up for our Gospel Fried Chicken, Memphis Star Black Eyed Peas, and a big hunk of Brown Sugar Sweet Potato Pie.";
 
-  heroContainer.appendChild(heroTitle);
-  heroContainer.appendChild(heroCopyHeading);
-  heroContainer.appendChild(heroCopy);
+  heroContainer.appendChild(heroTitleContainer);
+  heroContainer.appendChild(heroCopyContainer);
 
   return heroContainer;
 };
@@ -62,7 +68,6 @@ const loadPage = () => {
 
   document.body.appendChild(siteContainer);
   document.body.appendChild(footer);
-
 };
 
 export default loadPage;

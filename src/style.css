@@ -10,6 +10,7 @@ body {
   background-color: rgb(234, 225, 206);
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -37,29 +38,58 @@ img {
 
   grid-template-areas:
     "nav"
-    "hero"
     "hero";
 
-  grid-template-rows: 1fr 3fr 2fr;
+  grid-template-rows: auto 1fr;
 
-  padding: 30px;
   border-radius: 10px;
 }
 
-.hero-section {
+.hero-container::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .1;
+
+    background-image: url('../src/big-mama-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-container {
   grid-area: hero;
-  background-color: pink;
+
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 0 20px;
+}
+
+
+.hero-title-container {
+  height: 50%;
 
   display: flex;
-  padding: 0 20px;
+  flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
 }
-.hero-container {
-}
+
 .hero-title {
   font-size: 2rem;
 }
 
+.hero-copy-container {
+  display: flex;
+  height: 50%;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 30px;
+}
 .nav-section {
   grid-area: nav;
   background-color: white;
