@@ -1,14 +1,26 @@
-// This module creates and returns all front
-// page node elements
-import "../src/style.css";
+// loadpage.js
+// Generates basic page structure
+
+import "./style.css";
 
 import HeroPng from "../src/big-mama-background.png";
 const siteContainer = document.querySelector(".site-container");
 
-const createNavElements = () => {
+const createNavLink = (linkTitle, className) => {
+  const link = document.createElement("a");
+  link.textContent = linkTitle;
+  link.className = className;
+
+  return link;
+};
+
+const createNavTabs = () => {
   const navContainer = document.createElement("nav");
+
   navContainer.className = "nav-container";
-  navContainer.textContent = "This is the nav container";
+
+  navContainer.appendChild(createNavLink("Menu", "menu-tab"));
+  navContainer.appendChild(createNavLink("contact", "contact-tab"));
 
   return navContainer;
 };
@@ -37,8 +49,13 @@ const createHeroElements = () => {
 
   const heroCopyContainer = document.createElement("div");
   heroCopyContainer.className = "hero-copy-container";
-  heroCopyContainer.textContent =
+
+  const heroCopy = document.createElement("p");
+  heroCopy.className = "hero-copy";
+  heroCopy.textContent =
     "Folks all over the south line up for our Gospel Fried Chicken, Memphis Star Black Eyed Peas, and a big hunk of Brown Sugar Sweet Potato Pie.";
+
+  heroCopyContainer.appendChild(heroCopy);
 
   heroContainer.appendChild(heroTitleContainer);
   heroContainer.appendChild(heroCopyContainer);
@@ -52,15 +69,21 @@ const createFooterElements = () => {
 
   const footerText = document.createElement("p");
   footerText.className = "footer-text";
-  footerText.textContent = "This is the footer";
+  footerText.textContent = "In honor of Big Mama Thornton, whom without, rock and roll would not exist.";
+
+    const copyright = document.createElement('p');
+    copyright.textContent = '2023 James Winston'
+     copyright.className = 'footer-text'
+
 
   footerContainer.appendChild(footerText);
+    footerContainer.appendChild(copyright);
 
   return footerContainer;
 };
 
 const loadPage = () => {
-  const nav = createNavElements();
+  const nav = createNavTabs();
   const hero = createHeroElements();
   const footer = createFooterElements();
 

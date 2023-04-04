@@ -30,8 +30,7 @@ img {
 }
 
 .site-container {
-  height: 70%;
-  width: 80%;
+  height: 90%;
 
   display: grid;
 
@@ -42,6 +41,14 @@ img {
   grid-template-rows: auto 1fr;
 
   padding: 30px;
+}
+
+.nav-container {
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .hero-container::before {
@@ -82,17 +89,20 @@ img {
 }
 
 .hero-title {
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 .hero-copy-container {
-  display: flex;
   height: 50%;
+
+  margin: 0 10px;
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
   padding-top: 30px;
 }
-.nav-section {
-  grid-area: nav;
-  background-color: white;
+
+.hero-copy {
+  font-weight: 600;
 }
