@@ -18,6 +18,8 @@ const getHoursLocationPage = () => {
   hoursLocation.appendChild(address);
   hoursLocation.appendChild(hours);
 
+  hoursLocation.classList.add("menu-container");
+
   return hoursLocation;
 };
 

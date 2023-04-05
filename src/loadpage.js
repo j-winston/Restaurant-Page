@@ -10,7 +10,7 @@ const createNavLink = (linkTitle, className) => {
   const link = document.createElement("a");
   link.textContent = linkTitle.toUpperCase();
   link.className = className;
-    link.classList.add('underline-animation')
+  link.classList.add("underline-animation");
 
   return link;
 };

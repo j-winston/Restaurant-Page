@@ -5,6 +5,7 @@ import "./style.css";
 
 const createMenuListing = (heading, desc, price) => {
   const itemContainer = document.createElement("div");
+  itemContainer.classList.add("item-container");
 
   const title = document.createElement("h2");
   title.textContent = heading;
@@ -23,7 +24,8 @@ const createMenuListing = (heading, desc, price) => {
 };
 
 const getMenuPage = () => {
-  const menu = document.createElement("div");
+  const menuContainer = document.createElement("div");
+  menuContainer.classList.add("menu-container");
 
   const brownBeans = createMenuListing(
     "brown beans",
@@ -41,10 +43,10 @@ const getMenuPage = () => {
     34
   );
 
-  menu.appendChild(brownBeans);
-  menu.appendChild(catfishDinner);
-  menu.appendChild(ribTipsDinner);
-  return menu;
+  menuContainer.appendChild(brownBeans);
+  menuContainer.appendChild(ribTipsDinner);
+  menuContainer.appendChild(catfishDinner);
+  return menuContainer;
 };
 
 export default getMenuPage;
