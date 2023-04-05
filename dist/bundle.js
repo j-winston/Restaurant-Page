@@ -252,7 +252,7 @@ eval("module.exports = __webpack_require__.p + \"f4f89062321390018f92.ttf\";\n\n
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "/Restaurant-Page/";
+/******/ 		__webpack_require__.p = "/sdfsdfsdfsdfsfsodjfjdfsRestaurant-Page/";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
