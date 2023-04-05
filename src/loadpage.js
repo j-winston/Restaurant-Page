@@ -3,7 +3,7 @@
 
 import "./style.css";
 
-import HeroPng from "../src/big-mama-background.png";
+import HeroPng from "./big-mama-background.png";
 const siteContainer = document.querySelector(".site-container");
 
 const createNavLink = (linkTitle, className) => {
