@@ -252,7 +252,7 @@ eval("module.exports = __webpack_require__.p + \"f4f89062321390018f92.ttf\";\n\n
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "https://j-winston.github.io/Restaurant-Page/";
+/******/ 		__webpack_require__.p = "/Restaurant-Page/";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
