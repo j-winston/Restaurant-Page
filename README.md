@@ -13,7 +13,7 @@
 
 ### Try It Out, Here
 ---
-[Come get your soulfood](https://j-winston.github.io/Restaurant-Page/)
+[Have a look, here](https://j-winston.github.io/Restaurant-Page/)
 
 ### Introduction 
 ---
