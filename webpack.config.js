@@ -9,7 +9,7 @@ module.exports = {
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
-    publicPath: "/",
+    publicPath: "https://j-winston.github.io/Restaurant-Page/",
   },
 
   module: {
