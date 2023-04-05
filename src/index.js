@@ -1,6 +1,6 @@
 // index.js
 
-import loadPage from "./loadpage.js";
+import { getHomePage, loadPage } from "./loadpage.js";
 import getMenuPage from "./menu.js";
 import getHoursLocationPage from "./hours-location.js";
 
@@ -10,9 +10,10 @@ const erase = (element) => {
 
 loadPage();
 
-//Nav
+// Switch pages when user clicks link
 const menuTab = document.querySelector(".menu-tab");
-const contactTab = document.querySelector(".contact-tab");
+const hoursTab = document.querySelector(".hours-tab");
+const homeTab = document.querySelector(".home-tab");
 
 const heroContainer = document.querySelector(".hero-container");
 
@@ -21,7 +22,12 @@ menuTab.addEventListener("click", () => {
   heroContainer.appendChild(getMenuPage());
 });
 
-contactTab.addEventListener("click", () => {
+hoursTab.addEventListener("click", () => {
   erase(heroContainer);
   heroContainer.appendChild(getHoursLocationPage());
+});
+
+homeTab.addEventListener("click", () => {
+  erase(heroContainer);
+  heroContainer.appendChild(getHomePage());
 });

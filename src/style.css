@@ -7,7 +7,7 @@ body {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgb(234, 225, 206);
+  background-color: #f1f1d3;
 
   display: flex;
   flex-direction: column;
@@ -29,8 +29,16 @@ img {
   height: auto;
 }
 
+@font-face {
+  font-family: "black-han-sans";
+  src: url("./black-han-sans/BlackHanSans-Regular.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
 .site-container {
   height: 90%;
+  min-width: 80%;
 
   display: grid;
 
@@ -44,11 +52,46 @@ img {
 }
 
 .nav-container {
-  background-color: white;
-
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: flex-end;
+
+  padding: 20px;
+  font-family: "black-han-sans";
+  font-size: 1.2rem;
+  color: #b32382;
+}
+
+.nav-container .home-tab,
+.nav-container .menu-tab,
+.nav-container .hours-tab {
+  cursor: pointer;
+}
+
+.underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #b32382;
+}
+
+.underline-animation::after {
+    width: 10%;
+    height: 3px;
+
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+
+    content: '';
+    visibility: hidden;
+    background-color:#b32382; 
+    
+    transition: 150ms ease-in-out;
+}
+
+.underline-animation:hover::after {
+    visibility: visible;
+    transform: scaleX(10);
 }
 
 .hero-container::before {
@@ -62,6 +105,7 @@ img {
   opacity: 0.2;
 
   background-image: url("../src/big-mama-background.png");
+
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -79,17 +123,24 @@ img {
   border-radius: 15px;
 }
 
-.hero-title-container {
+.hero-text-container {
   height: 50%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
+  padding: 10px;
 }
 
 .hero-title {
+  color: white;
+  font-family: "black-han-sans";
   font-size: 4rem;
+}
+
+.tagline {
+  color: white;
+  font-family: "black-han-sans";
+}
+
+.x-large {
+  font-size: 6rem;
 }
 
 .hero-copy-container {

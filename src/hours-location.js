@@ -1,5 +1,5 @@
 // hours-location.js
-// Generates and returns hours and location 
+// Generates and returns hours and location
 
 import "./style.css";
 
