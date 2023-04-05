@@ -1,4 +1,5 @@
 const path = require("path");
+const PromptSync = require("prompt-sync");
 
 module.exports = {
   mode: "development",
@@ -8,7 +9,11 @@ module.exports = {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
   },
-
+  devServer: {
+    static: {
+      directory: path.join(__dirname, "dist"),
+    },
+  },
 
   module: {
     rules: [
@@ -34,10 +39,10 @@ module.exports = {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
-        {
-            test: /\.ttf$/i,
-            type: 'asset/resource',
-        }
+      {
+        test: /\.ttf$/i,
+        type: "asset/resource",
+      },
     ],
   },
 };

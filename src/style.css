@@ -152,7 +152,6 @@ img {
   justify-content: flex-start;
 
   padding-top: 30px;
-
 }
 
 .hero-copy {
@@ -170,20 +169,19 @@ img {
   justify-content: center;
   gap: 15px;
 
-  color:white; 
+  color: white;
   font-family: "black-han-sans";
   font-size: 1rem;
   animation: fade-in 1.5s;
-
 }
 
 @keyframes fade-in {
-    0%{
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .item-container {
