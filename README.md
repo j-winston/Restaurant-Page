@@ -1,5 +1,5 @@
 # Restaurant Page for Big Mama Thornton's Cafe
-Dedicated to the one of the greatest and most underrated artists of all time. 
+![Selection_006](https://user-images.githubusercontent.com/102254727/230072271-e979e7a0-88b3-418e-a713-fae768c91352.png)
 ---
 
 ## Table of Contents
@@ -33,8 +33,10 @@ A simple, fictional restaurant app that leverages the power of webpack. It was c
 
 ### Inspiration 
 ---
-My inspiration for "Big Mama T's Cafe" came from my both my experience with rock music and from eating soul food! I will never forget the first time hearing "Hound Dog"
-and saying to myself, "oh this is what it's supposed to sound like!".
+My inspiration for "Big Mama T's Cafe" came from my both my experience with Big Mama Thornton's music and from eating soul food! I will never forget the first time I heard her version(the original) of "Hound Dog" and 
+and saying to myself, "oh THIS is what it's supposed to sound like!".
+
+On an aesthetic note, I wanted to front page to appear like an album cover. 
 
 On a technical note, I could see the benefit of bundling with webpack, and I wanted to really dig in and give it a shot. All resources were handled with webpack loaders.
 
