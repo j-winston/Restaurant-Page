@@ -9,11 +9,6 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
   },
 
-  devServer: {
-    static: {
-      directory: "./dist",
-    },
-  },
 
   module: {
     rules: [
