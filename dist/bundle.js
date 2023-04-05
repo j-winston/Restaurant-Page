@@ -146,7 +146,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _loa
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"getHomePage\": () => (/* binding */ getHomePage),\n/* harmony export */   \"loadPage\": () => (/* binding */ loadPage)\n/* harmony export */ });\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _src_big_mama_background_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../src/big-mama-background.png */ \"./src/big-mama-background.png\");\n// loadpage.js\n// Generates basic page structure\n\n\n\n\nconst siteContainer = document.querySelector(\".site-container\");\n\nconst createNavLink = (linkTitle, className) => {\n  const link = document.createElement(\"a\");\n  link.textContent = linkTitle.toUpperCase();\n  link.className = className;\n  link.classList.add(\"underline-animation\");\n\n  return link;\n};\n\nconst createNavTabs = () => {\n  const navContainer = document.createElement(\"nav\");\n\n  navContainer.className = \"nav-container\";\n\n  navContainer.appendChild(createNavLink(\"home\", \"home-tab\"));\n  navContainer.appendChild(createNavLink(\"menu\", \"menu-tab\"));\n  navContainer.appendChild(createNavLink(\"hours + location\", \"hours-tab\"));\n  return navContainer;\n};\n\nconst getHeroCopy = () => {\n  const heroTitle = document.createElement(\"h1\");\n  heroTitle.className = \"hero-title\";\n  heroTitle.textContent = \"BIG MAMA\";\n  heroTitle.classList.add(\"x-large\");\n\n  const heroSubTitle = document.createElement(\"h1\");\n  heroSubTitle.className = \"hero-title\";\n  heroSubTitle.textContent = \"T's Cafe\";\n\n  const tagLine = document.createElement(\"h2\");\n  tagLine.textContent = \"Soulful. Original. Timeless.\";\n  tagLine.className = \"tagline\";\n\n  const heroTextContainer = document.createElement(\"div\");\n  heroTextContainer.className = \"hero-text-container\";\n  heroTextContainer.appendChild(heroTitle);\n  heroTextContainer.appendChild(heroSubTitle);\n  heroTextContainer.appendChild(tagLine);\n\n  return heroTextContainer;\n};\n\nconst createHeroElements = () => {\n  const heroImage = new Image();\n  heroImage.src = _src_big_mama_background_png__WEBPACK_IMPORTED_MODULE_1__;\n  heroImage.className = \"hero-img\";\n\n  const heroContainer = document.createElement(\"main\");\n  heroContainer.className = \"hero-container\";\n\n  const heroCopy = getHeroCopy();\n\n  heroContainer.appendChild(heroCopy);\n\n  return heroContainer;\n};\n\nconst createFooterElements = () => {\n  const footerContainer = document.createElement(\"footer\");\n  footerContainer.className = \"footer-container\";\n\n  const footerText = document.createElement(\"p\");\n  footerText.className = \"footer-text\";\n  footerText.textContent =\n    \"In honor of Big Mama Thornton, whom without, rock and roll would not exist.\";\n\n  const copyright = document.createElement(\"p\");\n  copyright.textContent = \"2023 James Winston\";\n  copyright.className = \"footer-text\";\n\n  footerContainer.appendChild(footerText);\n  footerContainer.appendChild(copyright);\n\n  return footerContainer;\n};\n\nconst getHomePage = () => {\n  return getHeroCopy();\n};\n\nconst loadPage = () => {\n  const nav = createNavTabs();\n  const hero = createHeroElements();\n  const footer = createFooterElements();\n\n  siteContainer.appendChild(nav);\n  siteContainer.appendChild(hero);\n\n  document.body.appendChild(siteContainer);\n  document.body.appendChild(footer);\n};\n\n\n\n\n//# sourceURL=webpack://js-restaurant-page/./src/loadpage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"getHomePage\": () => (/* binding */ getHomePage),\n/* harmony export */   \"loadPage\": () => (/* binding */ loadPage)\n/* harmony export */ });\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _big_mama_background_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./big-mama-background.png */ \"./src/big-mama-background.png\");\n// loadpage.js\n// Generates basic page structure\n\n\n\n\nconst siteContainer = document.querySelector(\".site-container\");\n\nconst createNavLink = (linkTitle, className) => {\n  const link = document.createElement(\"a\");\n  link.textContent = linkTitle.toUpperCase();\n  link.className = className;\n  link.classList.add(\"underline-animation\");\n\n  return link;\n};\n\nconst createNavTabs = () => {\n  const navContainer = document.createElement(\"nav\");\n\n  navContainer.className = \"nav-container\";\n\n  navContainer.appendChild(createNavLink(\"home\", \"home-tab\"));\n  navContainer.appendChild(createNavLink(\"menu\", \"menu-tab\"));\n  navContainer.appendChild(createNavLink(\"hours + location\", \"hours-tab\"));\n  return navContainer;\n};\n\nconst getHeroCopy = () => {\n  const heroTitle = document.createElement(\"h1\");\n  heroTitle.className = \"hero-title\";\n  heroTitle.textContent = \"BIG MAMA\";\n  heroTitle.classList.add(\"x-large\");\n\n  const heroSubTitle = document.createElement(\"h1\");\n  heroSubTitle.className = \"hero-title\";\n  heroSubTitle.textContent = \"T's Cafe\";\n\n  const tagLine = document.createElement(\"h2\");\n  tagLine.textContent = \"Soulful. Original. Timeless.\";\n  tagLine.className = \"tagline\";\n\n  const heroTextContainer = document.createElement(\"div\");\n  heroTextContainer.className = \"hero-text-container\";\n  heroTextContainer.appendChild(heroTitle);\n  heroTextContainer.appendChild(heroSubTitle);\n  heroTextContainer.appendChild(tagLine);\n\n  return heroTextContainer;\n};\n\nconst createHeroElements = () => {\n  const heroImage = new Image();\n  heroImage.src = _big_mama_background_png__WEBPACK_IMPORTED_MODULE_1__;\n  heroImage.className = \"hero-img\";\n\n  const heroContainer = document.createElement(\"main\");\n  heroContainer.className = \"hero-container\";\n\n  const heroCopy = getHeroCopy();\n\n  heroContainer.appendChild(heroCopy);\n\n  return heroContainer;\n};\n\nconst createFooterElements = () => {\n  const footerContainer = document.createElement(\"footer\");\n  footerContainer.className = \"footer-container\";\n\n  const footerText = document.createElement(\"p\");\n  footerText.className = \"footer-text\";\n  footerText.textContent =\n    \"In honor of Big Mama Thornton, whom without, rock and roll would not exist.\";\n\n  const copyright = document.createElement(\"p\");\n  copyright.textContent = \"2023 James Winston\";\n  copyright.className = \"footer-text\";\n\n  footerContainer.appendChild(footerText);\n  footerContainer.appendChild(copyright);\n\n  return footerContainer;\n};\n\nconst getHomePage = () => {\n  return getHeroCopy();\n};\n\nconst loadPage = () => {\n  const nav = createNavTabs();\n  const hero = createHeroElements();\n  const footer = createFooterElements();\n\n  siteContainer.appendChild(nav);\n  siteContainer.appendChild(hero);\n\n  document.body.appendChild(siteContainer);\n  document.body.appendChild(footer);\n};\n\n\n\n\n//# sourceURL=webpack://js-restaurant-page/./src/loadpage.js?");
 
 /***/ }),
 
@@ -234,6 +234,18 @@ eval("module.exports = __webpack_require__.p + \"f4f89062321390018f92.ttf\";\n\n
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -252,7 +264,22 @@ eval("module.exports = __webpack_require__.p + \"f4f89062321390018f92.ttf\";\n\n
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "/sdfsdfsdfsdfsfsodjfjdfsRestaurant-Page/";
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
