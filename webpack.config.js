@@ -9,12 +9,6 @@ module.exports = {
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
-      publicPath: 'https://j-winston.github.io/Restaurant-Page/'
-  },
-  devServer: {
-    static: {
-      directory: path.join(__dirname, "dist"),
-    },
   },
 
   module: {
