@@ -13,7 +13,6 @@
   "bugs": {
     "url": "https://github.com/j-winston/Restaurant-Page/issues"
   },
-  "homepage": "https://github.com/j-winston/Restaurant-Page#readme",
   "devDependencies": {
     "css-loader": "^6.7.3",
     "html-loader": "^4.2.0",
