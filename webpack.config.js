@@ -5,29 +5,16 @@ const PromptSync = require("prompt-sync");
 module.exports = {
   mode: "development",
   entry: "./src/index.js",
-
+devServer: {
+    static: './dist',
+},
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
-      publicPath:'auto', 
   },
 
   module: {
     rules: [
-      {
-        test: /\.html$/i,
-        loader: "html-loader",
-        options: {
-          sources: {
-            list: [
-              "...",
-              {
-                tag: "img",
-              },
-            ],
-          },
-        },
-      },
       {
         test: /\.(png|jpg)$/i,
         type: "asset/resource",

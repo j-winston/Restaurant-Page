@@ -29,7 +29,7 @@ const getMenuPage = () => {
 
   const brownBeans = createMenuListing(
     "brown beans",
-    "scrumptious fried potatoes and onions served with corn bread",
+    "scrumptious steaks and onions served with corn bread",
     21
   );
   const catfishDinner = createMenuListing(
